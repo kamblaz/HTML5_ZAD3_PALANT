@@ -41,13 +41,13 @@ button {
 }
 
 .bounce-ball {
-    left: -10vw;
+    left: 150px;
     position: absolute;
-    bottom: 10vh;
-    animation: bounce 2s infinite, move 10s infinite; 
+    bottom: 30%;
+    animation: throw 2s infinite; 
 }
 
-@keyframes bounce {
+@keyframes throw {
     0%  {   transform: translateY(0vh) ;
             animation-timing-function: linear;
         }
@@ -69,15 +69,4 @@ button {
     100% {  transform: translateY(0vh);
             animation-timing-function: linear;
         }
-}
-
-@keyframes move {
-    0% {
-        left: -10vw;
-        animation-timing-function: linear;
-    }
-    100% {
-        left: calc(100vw);
-        animation-timing-function: linear;
-    }
 }
