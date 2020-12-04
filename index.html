@@ -1,0 +1,20 @@
+<html>
+<head>
+    <link rel="stylesheet" href="palant.css">
+</head>
+<body>
+<div>
+    <div class="human"></div>
+     <div class="human"></div>
+    <div id="ballContainer" class="ballContainer">
+        <div class="ball"></div>
+    </div>
+</div>
+</body>
+<button onclick='moveme();'>click me</button>
+<script>
+    function moveme() {
+        document.getElementById("ballContainer").className = "bounce-ball";
+    }
+</script>
+</html>
