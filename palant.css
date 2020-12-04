@@ -1,24 +1,24 @@
 .ballContainer {
     position: absolute;
     bottom: 30%;
-    left: 150px;
+    left:12%;
 }
 
 .leftHuman {
-    width:100px;
+    width:7%;
     height:50%;
     position:fixed;
     bottom:0;
-    left: 50px;
+    left: 5%;
     background-color:yellow;
 }
 
 .rightHuman {
-    width:100px;
+    width:7%;
     height:50%;
     position:fixed;
     bottom:0;
-    right: 50px;
+    right: 5%;
     background-color:yellow;
 }
 
@@ -49,21 +49,6 @@ button {
 
 @keyframes throw {
     0%  {   transform: translateY(0vh) ;
-            animation-timing-function: linear;
-        }
-    25% {   transform: translateY(-20vh) ;
-            animation-timing-function: linear;
-        }
-    45% {    transform: translateY(-38vh) ;
-            animation-timing-function: linear;
-        }
-    50% {    transform: translateY(-40vh) ;
-            animation-timing-function: linear;
-        }
-    55% {    transform: translateY(-38vh) ;
-            animation-timing-function: linear;
-        }
-    75% {   transform: translateY(-20vh) ;
             animation-timing-function: linear;
         }
     100% {  transform: translateY(0vh);
