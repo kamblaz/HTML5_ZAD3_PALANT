@@ -1,24 +1,24 @@
 .ballContainer {
     position: absolute;
-    bottom: 30%;
-    left:12%;
+    bottom: 30vh;
+    left:12vw;
 }
 
 .leftHuman {
-    width:7%;
-    height:50%;
+    width:7vw;
+    height:50vh;
     position:fixed;
     bottom:0;
-    left: 5%;
+    left: 5vw;
     background-color:yellow;
 }
 
 .rightHuman {
-    width:7%;
-    height:50%;
+    width:7vw;
+    height:50vh;
     position:fixed;
     bottom:0;
-    right: 5%;
+    right: 5vw;
     background-color:yellow;
 }
 
@@ -41,17 +41,17 @@ button {
 }
 
 .bounce-ball {
-    left: 150px;
+    left: 12vw;
     position: absolute;
-    bottom: 30%;
-    animation: throw 2s infinite; 
+    bottom: 30vh;
+    animation: throw 1s infinite; 
 }
 
 @keyframes throw {
-    0%  {   transform: translateY(0vh) ;
+    0%  {   transform: translateX(0vw) ;
             animation-timing-function: linear;
         }
-    100% {  transform: translateY(0vh);
+    100% {  transform: translateX(70vw);
             animation-timing-function: linear;
         }
 }
