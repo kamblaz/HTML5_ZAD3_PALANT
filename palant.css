@@ -54,18 +54,32 @@ button {
     position: relative;
 }
 
-.bounce-ball {
+.ballAnimation {
     left: 12vw;
     position: absolute;
     bottom: 30vh;
-    animation: throw 1s infinite; 
+    animation: ballAnimation 1s infinite; 
 }
 
-@keyframes throw {
+.stickAnimation {
+    position: relative;
+    animation: stickAnimation 1s infinite; 
+}
+
+@keyframes ballAnimation {
     0%  {   transform: translateX(0vw) ;
             animation-timing-function: linear;
         }
     100% {  transform: translateX(70vw);
+            animation-timing-function: linear;
+        }
+}
+
+@keyframes stickAnimation {
+    0%  {   transform: rotateX(15deg) ;
+            animation-timing-function: linear;
+        }
+    100% {  transform: translateX(15deg);
             animation-timing-function: linear;
         }
 }
