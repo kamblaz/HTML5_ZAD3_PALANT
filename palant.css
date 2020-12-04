@@ -4,12 +4,21 @@
     left: -10%;
 }
 
-.human {
+.leftHuman {
     width:10%;
-    height:20%;
+    height:50%;
     position:fixed;
     bottom:0;
     left: 50px;
+    background-color:yellow;
+}
+
+.rightHuman {
+    width:10%;
+    height:50%;
+    position:fixed;
+    bottom:0;
+    right: 50px;
     background-color:yellow;
 }
 
