@@ -4,6 +4,27 @@
     left:12vw;
 }
 
+.ball {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.stickContainer{
+    position: relative;
+}
+
+
+.stick {
+    width:1vw;
+    height:20vh;
+    position:relative;
+    top:6vh;
+    left: 0;
+    background-color:black;
+}
+
 .leftHuman {
     width:7vw;
     height:50vh;
@@ -20,13 +41,6 @@
     bottom:0;
     right: 5vw;
     background-color:yellow;
-}
-
-.ball {
-    height: 50px;
-    width: 50px;
-    background-color: red;
-    border-radius: 50%;
 }
 
 button {
