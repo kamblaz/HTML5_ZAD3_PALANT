@@ -12,14 +12,14 @@
 }
 
 .stickContainer{
-    position: relative;
+    position: absolute;
 }
 
 
 .stick {
     width:1vw;
     height:20vh;
-    position:relative;
+    position:absolute;
     top:6vh;
     left: 0;
     background-color:black;
@@ -62,24 +62,26 @@ button {
 }
 
 .stickAnimation {
-    position: relative;
-    animation: stickAnimation 1s infinite; 
+    position: absolute;
+    animation: stickAnimation 1s infinite linear; 
 }
 
 @keyframes ballAnimation {
-    0%  {   transform: translateX(0vw) ;
+    0%  {   
+            transform: translateX(0vw) ;
             animation-timing-function: linear;
         }
-    100% {  transform: translateX(70vw);
+    100% {  
+            transform: translateX(70vw);
             animation-timing-function: linear;
         }
 }
 
 @keyframes stickAnimation {
-    0%  {   transform: rotateX(15deg) ;
-            animation-timing-function: linear;
+    0%  {   
+            transform: rotateZ(0deg) ;
         }
-    100% {  transform: translateX(15deg);
-            animation-timing-function: linear;
+    100% {  
+            transform: rotateZ(90deg);
         }
 }
