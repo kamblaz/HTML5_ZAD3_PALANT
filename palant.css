@@ -58,12 +58,12 @@ button {
     left: 12vw;
     position: absolute;
     bottom: 30vh;
-    animation: ballAnimation 1s; 
+    animation: ballAnimation 2s; 
 }
 
 .stickAnimation {
     position: absolute;
-    animation: stickAnimation 1s ease-in; 
+    animation: stickAnimation 2s ease-in; 
 }
 
 @keyframes ballAnimation {
