@@ -1,11 +1,11 @@
 .ballContainer {
     position: absolute;
-    top: 20%;
-    left: -10%;
+    bottom: 30%;
+    left: 150px;
 }
 
 .leftHuman {
-    width:10%;
+    width:100px;
     height:50%;
     position:fixed;
     bottom:0;
@@ -14,7 +14,7 @@
 }
 
 .rightHuman {
-    width:10%;
+    width:100px;
     height:50%;
     position:fixed;
     bottom:0;
