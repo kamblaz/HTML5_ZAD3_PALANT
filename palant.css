@@ -71,8 +71,12 @@ button {
             transform: translateX(0vw) ;
             animation-timing-function: linear alternate;
         }
+    50%  {   
+            transform: translateX(70vw) ;
+            animation-timing-function: linear alternate;
+        }
     100% {  
-            transform: translateX(70vw);
+            transform: translate3d(-70vw,-100vh,0);
             animation-timing-function: linear alternate;
         }
 }
