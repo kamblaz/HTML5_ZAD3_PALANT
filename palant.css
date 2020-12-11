@@ -58,11 +58,13 @@ button {
     left: 12vw;
     position: absolute;
     bottom: 30vh;
+    -o-animation: ballAnimation 8s linear forwards; 
     -webkit-animation: ballAnimation 8s linear forwards; 
 }
 
 .stickAnimation {
     position: absolute;
+    -o-animation: stickAnimation 4s linear forwards; 
     -webkit-animation: stickAnimation 4s linear forwards; 
 }
 
@@ -91,5 +93,32 @@ button {
         }
     100%{
             -webkit-transform: rotate(75deg);
+        }
+}
+@-o-keyframes ballAnimation {
+    0%  {   
+            -o-transform: translateX(0vw) ;
+        }
+    40%  {   
+            -o-transform: translateX(61vw) ;
+        }
+    100% {  
+            -o-transform: translate3d(-50vw,-300vh,0);
+            -o-animation-timing-function: ease-in alternate;
+        }
+}
+
+@-o-keyframes stickAnimation {
+    0%  {   
+            -o-transform: rotate(0deg) ;
+        }
+    20%  {   
+            -o-transform: rotate(-15deg) ;
+        }
+    80%{
+            -o-transform: rotate(60deg) ;
+        }
+    100%{
+            -o-transform: rotate(75deg);
         }
 }
