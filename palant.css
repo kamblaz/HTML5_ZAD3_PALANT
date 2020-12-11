@@ -75,7 +75,7 @@ button {
             transform: translateX(61vw) ;
         }
     100% {  
-            transform: translate3d(-140vw,-200vh,0);
+            transform: translate3d(-50vw,-200vh,0);
             animation-timing-function: ease-in alternate;
         }
 }
