@@ -58,12 +58,13 @@ button {
     left: 12vw;
     position: absolute;
     bottom: 30vh;
-    animation: ballAnimation 2s; 
+    animation: ballAnimation 8s forwards; 
 }
 
 .stickAnimation {
     position: absolute;
-    animation: stickAnimation 1s linear; 
+    transform-origin: bottom right;
+    animation: stickAnimation 4s linear forwards; 
 }
 
 @keyframes ballAnimation {
@@ -86,9 +87,12 @@ button {
             transform: rotate(0deg) ;
         }
     20%  {   
-            transform: rotate(0deg) ;
+            transform: rotate(-15deg) ;
         }
-    100% {  
-            transform: rotate(90deg);
+    80%{
+            transform: rotate(60deg) ;
+        }
+    100%{
+            transform: rotate(75deg);
         }
 }
