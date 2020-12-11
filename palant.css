@@ -59,12 +59,14 @@ button {
     position: absolute;
     bottom: 30vh;
     -o-animation: ballAnimation 8s linear forwards; 
+    -moz-animation: ballAnimation 8s linear forwards; 
     -webkit-animation: ballAnimation 8s linear forwards; 
 }
 
 .stickAnimation {
     position: absolute;
     -o-animation: stickAnimation 4s linear forwards; 
+    -moz-animation: stickAnimation 4s linear forwards; 
     -webkit-animation: stickAnimation 4s linear forwards; 
 }
 
@@ -120,5 +122,32 @@ button {
         }
     100%{
             -o-transform: rotate(75deg);
+        }
+}
+@-moz-keyframes ballAnimation {
+    0%  {   
+            -moz-transform: translateX(0vw) ;
+        }
+    40%  {   
+            -moz-transform: translateX(61vw) ;
+        }
+    100% {  
+            -moz-transform: translate3d(-50vw,-300vh,0);
+            -moz-animation-timing-function: ease-in alternate;
+        }
+}
+
+@-moz-keyframes stickAnimation {
+    0%  {   
+            -moz-transform: rotate(0deg) ;
+        }
+    20%  {   
+            -moz-transform: rotate(-15deg) ;
+        }
+    80%{
+            -moz-transform: rotate(60deg) ;
+        }
+    100%{
+            -moz-transform: rotate(75deg);
         }
 }
