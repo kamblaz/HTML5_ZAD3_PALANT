@@ -20,7 +20,7 @@
     width:1vw;
     height:20vh;
     position:absolute;
-    top:12vh;
+    top:15vh;
     left: 2vw;
     background-color:black;
 }
@@ -58,7 +58,7 @@ button {
     left: 12vw;
     position: absolute;
     bottom: 30vh;
-    animation: ballAnimation 8s forwards; 
+    animation: ballAnimation 8s linear forwards; 
 }
 
 .stickAnimation {
@@ -70,15 +70,13 @@ button {
 @keyframes ballAnimation {
     0%  {   
             transform: translateX(0vw) ;
-            animation-timing-function: linear alternate;
         }
-    50%  {   
-            transform: translateX(70vw) ;
-            animation-timing-function: linear alternate;
+    40%  {   
+            transform: translateX(61vw) ;
         }
     100% {  
-            transform: translate3d(-70vw,-100vh,0);
-            animation-timing-function: linear alternate;
+            transform: translate3d(-140vw,-200vh,0);
+            animation-timing-function: ease-in alternate;
         }
 }
 
