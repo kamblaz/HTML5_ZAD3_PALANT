@@ -5,8 +5,8 @@
 }
 
 .ball {
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
     background-color: red;
     border-radius: 50%;
 }
@@ -58,13 +58,13 @@ button {
     left: 12vw;
     position: absolute;
     bottom: 30vh;
-    animation: ballAnimation 8s linear forwards; 
+    animation: ballAnimation 32s linear forwards; 
 }
 
 .stickAnimation {
     position: absolute;
     transform-origin: bottom right;
-    animation: stickAnimation 4s linear forwards; 
+    animation: animation-delay 8s stickAnimation 8s linear forwards; 
 }
 
 @keyframes ballAnimation {
