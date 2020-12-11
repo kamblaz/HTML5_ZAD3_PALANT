@@ -1,6 +1,6 @@
 .ballContainer {
     position: absolute;
-    bottom: 30vh;
+    bottom: 28vh;
     left:12vw;
 }
 
@@ -18,9 +18,9 @@
 
 .stick {
     width:1vw;
-    height:20vh;
+    height:25vh;
     position:absolute;
-    top:15vh;
+    top:18vh;
     left: 2vw;
     background-color:black;
 }
@@ -57,27 +57,27 @@ button {
 .ballAnimation {
     left: 12vw;
     position: absolute;
-    bottom: 30vh;
-    animation: ballAnimation 4s linear forwards; 
-    -o-animation: ballAnimation 4s linear forwards; 
-    -moz-animation: ballAnimation 4s linear forwards; 
-    -webkit-animation: ballAnimation 4s linear forwards; 
+    bottom: 28vh;
+    animation: ballAnimation 8s linear forwards; 
+    -o-animation: ballAnimation 8s linear forwards; 
+    -moz-animation: ballAnimation 8s linear forwards; 
+    -webkit-animation: ballAnimation 8s linear forwards; 
 }
 
 .stickAnimation {
     position: absolute;
-    animation: stickAnimation 2s linear forwards; 
-    -o-animation: stickAnimation 2s linear forwards; 
-    -moz-animation: stickAnimation 2s linear forwards; 
-    -webkit-animation: stickAnimation 2s linear forwards; 
+    animation: stickAnimation 4s linear forwards; 
+    -o-animation: stickAnimation 4s linear forwards; 
+    -moz-animation: stickAnimation 4s linear forwards; 
+    -webkit-animation: stickAnimation 4s linear forwards; 
 }
 
 @-webkit-keyframes ballAnimation {
     0%  {   
-            -webkit-transform: translateX(0vw) ;
+            -webkit-transform: translate3d(0vw,0vh,0);
         }
     40%  {   
-            -webkit-transform: translateX(61vw) ;
+            -webkit-transform: translate3d(61vw,0vh,0);
         }
     100% {  
             -webkit-transform: translate3d(-50vw,-300vh,0);
@@ -101,10 +101,10 @@ button {
 }
 @-o-keyframes ballAnimation {
     0%  {   
-            -o-transform: translateX(0vw) ;
+            -o-transform: translate3d(0vw,0vh,0);
         }
     40%  {   
-            -o-transform: translateX(61vw) ;
+            -o-transform: translate3d(61vw,0vh,0);
         }
     100% {  
             -o-transform: translate3d(-50vw,-300vh,0);
@@ -156,10 +156,10 @@ button {
 
 @keyframes ballAnimation {
     0%  {   
-            transform: translateX(0vw) ;
+            transform: translate3d(0vw,0vh,0);
         }
     40%  {   
-            transform: translateX(61vw) ;
+            transform: translate3d(58vw,3vh,0);
         }
     100% {  
             transform: translate3d(-50vw,-300vh,0);
