@@ -63,7 +63,6 @@ button {
 
 .stickAnimation {
     position: absolute;
-    -webkit-transform-origin: top right;
     -webkit-animation: stickAnimation 4s linear forwards; 
 }
 
@@ -82,19 +81,15 @@ button {
 
 @-webkit-keyframes stickAnimation {
     0%  {   
-            -webkit-transform-origin: 15px 0px 0px;
             -webkit-transform: rotate(0deg) ;
         }
     20%  {   
-            -webkit-transform-origin: 15px 0px 0px;
             -webkit-transform: rotate(-15deg) ;
         }
     80%{
-            -webkit-transform-origin: 15px 0px 0px;
             -webkit-transform: rotate(60deg) ;
         }
     100%{
-            -webkit-transform-origin: 15px 0px 0px;
             -webkit-transform: rotate(75deg);
         }
 }
