@@ -1,19 +1,21 @@
 <html>
+
 <head>
     <link rel="stylesheet" href="palant.css">
 </head>
+
 <body>
-<div>
-    <div class="leftHuman"></div>
-    <div class="rightHuman">
-        <div id="stickContainer" class="stickContainer">
-            <div class="stick"></div>
+    <div>
+        <div class="leftHuman"></div>
+        <div class="rightHuman">
+            <div id="stickContainer" class="stickContainer">
+                <div class="stick"></div>
+            </div>
+        </div>
+        <div id="ballContainer" class="ballContainer">
+            <div class="ball"></div>
         </div>
     </div>
-    <div id="ballContainer" class="ballContainer">
-        <div class="ball"></div>
-    </div>
-</div>
 </body>
 <button onclick='moveme();'>click me</button>
 <script>
@@ -22,4 +24,5 @@
         document.getElementById("stickContainer").className = "stickAnimation";
     }
 </script>
+
 </html>
